@@ -1,0 +1,94 @@
+<html>
+	<head>
+	</head>
+	
+	<body>
+	<p><input id="firstNumber" >
+	*
+	<input id="secondNumber">
+	>
+	<input  id="thirdNumber">
+	<input type="button" value="Check" onclick="check()">
+	
+	<p><input id="1">
+	<input id="2">
+	<input id="3">
+	<br><input id="4">
+	<input id="5">
+	<input id="6">
+	<br><input id="7">
+	<input id="8">
+	<input id="9">
+	<input type="button" value="Check" onclick="check2();calculate()">
+	
+	<script>
+		function check(){
+		var firstNumber=document.getElementById("firstNumber").value;
+		var secondNumber=document.getElementById("secondNumber").value;
+		var thirdNumber=document.getElementById("thirdNumber").value;
+		var result=("firstNumber * secondNumber > thirdNumber");
+		
+			if(firstNumber ==''|| secondNumber=='' || thirdNumber =='') {
+				alert('Inputs could not be blank');
+			}
+			else if(isNaN(firstNumber)){
+				alert('Inputs should be numbers');
+				return false;
+			}
+			/*else if(result = true){
+				alert(firstNumber*secondNumber > thirdNumber is true!);
+			}*/
+		};
+		
+		function check2(){
+		var one=document.getElementById("1").value;
+		var two=document.getElementById("2").value;
+		var three=document.getElementById("3").value;
+		var four=document.getElementById("4").value;
+		var five=document.getElementById("5").value;
+		var six=document.getElementById("6").value;
+		var seven=document.getElementById("7").value;
+		var eight=document.getElementById("8").value;
+		var nine=document.getElementById("9").value;
+				
+			if(one ==''|| two=='' || three ==''|| four ==''|| five ==''|| six ==''|| seven =='' || eight == '' || nine== '') {
+				alert('Inputs could not be blank');
+			}
+			else if(isNaN(one || two || three || four ||five || six|| seven || eight || nine )){
+				alert('Inputs should be numbers');
+				return false;
+			};
+			
+		};
+		
+		function calculate(){
+		var one=document.getElementById("1").value;
+		var two=document.getElementById("2").value;
+		var three=document.getElementById("3").value;
+		var four=document.getElementById("4").value;
+		var five=document.getElementById("5").value;
+		var six=document.getElementById("6").value;
+		var seven=document.getElementById("7").value;
+		var eight=document.getElementById("8").value;
+		var nine=document.getElementById("9").value;	
+		var result2 = (one + two + three);
+		
+			if( one+two+three == four+five+six == seven + eight + nine == one + four + seven == two + five + eight == three + six + nine == one + five + nine == three + five + seven ){
+				alert(result2);
+			};
+			else {
+				alert('try again');
+			};
+			
+		};
+		
+	</script>
+	
+	
+	https://github.com/dhie736/Infosys280Test.git
+	
+	
+	
+	
+	</body>
+</html>
